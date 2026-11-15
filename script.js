@@ -67,7 +67,7 @@ function renderList() {
   $("list").innerHTML = "";
   shown.forEach((c) => {
     const li = document.createElement("li");
-    li.innerHTML = '<span></span><span class="badge">${c.stamps}/${GOAL}</span>';
+    li.innerHTML = `<span></span><span class="badge">${c.stamps}/${GOAL}</span>`;
     li.firstChild.textContent = c.name;
     li.onclick = () => openCard(c.id);
     $("list").appendChild(li);
@@ -123,7 +123,7 @@ function renderHistory(c) {
     const li = document.createElement("li");
     const label = h.type === "stamp" ? "Stamp given" : "Free coffee redeemed";
     const when = new Date(h.date).toLocaleString([], { dateStyle: "medium", timeStyle: "short" });
-    li.innerHTML = '<span></span><span class="when"></span>';
+    li.innerHTML = `<span></span><span class="when"></span>`;
     li.children[0].textContent = label;
     li.children[1].textContent = when;
     $("history").appendChild(li);
