@@ -28,8 +28,11 @@ Open index.html in a browser, or visit the live page: https://angelsugue.github.
 
 ## Screenshots
 ![Lock screen](49a9f40c-ead5-40a9-a978-245f16532ebd.jpg)
+
 ![Customer list](40b0cf60-5d68-42e7-95c7-35a153d98ce3.jpg)
+
 ![Stamp card](cbfbbcaa-ee9b-4a12-b686-f51f36bf3a01.jpg)
+
 ![History](b5e13ee6-831b-4411-a394-9c20e2daf209.jpg)
 
 
