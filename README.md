@@ -37,4 +37,4 @@ Open index.html in a browser, or visit the live page: https://angelsugue.github.
 
 
 ## Author
-Angel Faye Q. Sugue, BSINTE-2B
+Angel Faye Q. Sugue, BSINTE-2C
