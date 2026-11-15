@@ -67,7 +67,7 @@ function renderList() {
   $("list").innerHTML = "";
   shown.forEach((c) => {
     const li = document.createElement("li");
-    li.innerHTML = '<span></span><span class="badge">${c.stamps}/${GOAL}</span>';
+    li.innerHTML = `<span></span><span class="badge">${c.stamps}/${GOAL}</span>`;
     li.firstChild.textContent = c.name;
     li.onclick = () => openCard(c.id);
     $("list").appendChild(li);
