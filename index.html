@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale=1">
+    <title>Loyalty Stamp Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+
+    <section id="lock" hidden>
+        <div class="lock-box">
+            <h1>Staff PIN</h1>
+            <p id="lock-msg" class="sub"></p>
+            <form id="lock-form">
+                <input id="pin" type="password" inputmode="numeric"
+                pattern="[0-9]{4}" maxlength="4" placeholder="4 digits"
+                required autocomplete="off">
+                <button type="submit">Continue</button>
+            </form>
+            <p id="lock-error" class="error" hidden>Wrong PIN. Try again</p>
+        </div>
+    </section>
+
+    <main id="app" hidden>
+        <header>
+            <div>
+                <h1>Loyalty Stamp Card</h1>
+                <p class="sub">Collect 10 stamps, get a free coffee.</p>
+            </div>
+            <button id="lock-btn" class="link">Lock</button>
+        </header>
+
+        <section id="home">
+            <form id="add-form">
+                <input id="name" type="text" placeholder="Customer name" required>
+                <button type="submit">Add customer</button>
+            </form>
+            <input id="search" placeholder="Search customers">
+            <ul id="list"></ul>
+            <p id="empty" class="muted">No customers yet. Add your first one above.</p>
+        </section>
+
+        <section id="card" hidden>
+            <button id="back" class="link">&larr; All customers</button>
+            <h2 id="card-name"></h2>
+            <div id="grid" class="grid"></div>
+            <p id="count" class="count"></p>
+            <p id="reward" class="reward" hidden>Free coffee earned!</p>
+            <div class="actions">
+                <button id="stamped">Give stamp</button>
+                <button id="redeem" class="secondary">Redeem</button>
+            </div>
+            <p class="muted">Rewards redeemed: <span id="rewards>0</span></p>
+
+            <h3>History</h3>
+            <ul id="history" class=""history"></ul>
+            <p id="history-empty" class="muted">No activity yet.</p>
+
+            <button id="delete" class="link danger">Delete customer</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
