@@ -67,7 +67,7 @@ function renderList() {
   $("list").innerHTML = "";
   shown.forEach((c) => {
     const li = document.createElement("li");
-    li.innerHTML = `<span></span><span class="badge">${c.stamps}/${GOAL}</span>`;
+    li.innerHTML = '<span></span><span class="badge">' + c.stamps + '/' + GOAL + '</span>';
     li.firstChild.textContent = c.name;
     li.onclick = () => openCard(c.id);
     $("list").appendChild(li);
@@ -109,7 +109,7 @@ function renderCard(popIndex = -1) {
   }
 
   const full = c.stamps >= GOAL;
-  $("count").textContent = `${c.stamps} of ${GOAL} stamps`;
+  $("count").textContent = c.stamps + " of " + GOAL + " stamps ";
   $("reward").hidden = !full;
   $("stamp").disabled = full;
   $("redeem").disabled = !full;
