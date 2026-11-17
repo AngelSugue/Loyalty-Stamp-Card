@@ -1,30 +1,24 @@
-Loyalty Stamp Card
+ Loyalty Stamp Card
 
-A mobile-friendly web app for coffee shops. Give and count stamps per customer.
-After 10 stamps, the customer earns a free coffee.
+A mobile-friendly web app for coffee shops. Staff give stamps to customers and count them per customer. At 10 stamps, the customer earns a free coffee.
 
 ## Features
-- Add customers and search them by name
-- Give a stamp (one tap) and see the count on a 10-circle card
-- Reward notice at 10 stamps, with a Redeem button that resets the card
-- Confetti when a card is full
-- Stamp history: date and time of every stamp and redemption
-- Staff PIN: the first launch asks you to set a 4-digit PIN; it is required to open the app, and a Lock button re-locks it
-- Data is saved in the browser (localStorage), so it stays after closing
+- Add customers and search by name
+- Give a stamp with one tap, shown on a 10-circle card
+- Confetti and a "Free coffee earned!" notice at 10 stamps
+- Redeem button that resets the card
+- History of every stamp and redemption with date and time
+- Staff PIN lock
+- Data saved in the browser (localStorage)
 
-The PIN is a simple demo lock stored in the browser. A real app would check it on a server.
+## How to install and run
+No installation needed.
+1. Open the live app: https://angelsugue.github.io/Loyalty-Stamp-Card/
+2. Or download this repo, then open index.html in a browser (Chrome, Edge, or Safari).
+3. On first launch, set a 4-digit staff PIN. Then add a customer and give stamps.
 
-
-## Tech
-HTML, CSS, and JavaScript. No libraries.
-
-## Run it
-Open index.html in a browser, or visit the live page: https://angelsugue.github.io/Loyalty-Stamp-Card/
-
-## Files
-- index.html: page structure
-- style.css: styling
-- script.js: stamp logic and saving
+## Built with
+HTML, CSS, and JavaScript.
 
 ## Screenshots
 ![Lock screen](49a9f40c-ead5-40a9-a978-245f16532ebd.jpg)
@@ -34,7 +28,6 @@ Open index.html in a browser, or visit the live page: https://angelsugue.github.
 ![Stamp card](cbfbbcaa-ee9b-4a12-b686-f51f36bf3a01.jpg)
 
 ![History](b5e13ee6-831b-4411-a394-9c20e2daf209.jpg)
-
 
 ## Author
 Angel Faye Q. Sugue, BSINTE-2C
